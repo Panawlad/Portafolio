@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wladimir Cantú — Data Scientist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&family=Roboto:wght@300;400;500;700&family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-family='Arial'%3EW%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ============== HOME / LANDING ============== -->
+  <section id="home" class="page page--home active">
+    <header class="home-header">
+      <nav class="home-nav">
+        <a href="#" class="nav-link" data-jump="sobre-mi">Sobre mí</a>
+        <a href="#" class="nav-link" data-jump="proyectos">Proyectos</a>
+        <a href="#" class="nav-link" data-jump="soft-skills">Soft skills</a>
+        <a href="#" class="nav-link" data-jump="tecnologias">Tecnologías</a>
+        <a href="#" class="nav-link" data-jump="experiencia">Experiencia</a>
+        <button class="apps-btn" aria-label="Apps" title="Aplicaciones de Wladimir">
+          <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zm6,0c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zm6,0c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zm6,0c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zm6,0c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zm6,0c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zm6,0c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"/></svg>
+        </button>
+        <button class="profile-avatar" title="Wladimir Cantú">W</button>
+      </nav>
+    </header>
+
+    <main class="home-main">
+      <h1 class="logo">
+        <span style="color:#4285F4">W</span><span style="color:#EA4335">l</span><span style="color:#FBBC05">a</span><span style="color:#4285F4">d</span><span style="color:#34A853">i</span><span style="color:#EA4335">m</span><span style="color:#FBBC05">i</span><span style="color:#4285F4">r</span>
+      </h1>
+
+      <form class="search-box" id="search-form">
+        <div class="search-inner">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24"><path fill="#9aa0a6" d="M15.5,14h-0.79l-0.28,-0.27C15.41,12.59 16,11.11 16,9.5 16,5.91 13.09,3 9.5,3S3,5.91 3,9.5 5.91,16 9.5,16c1.61,0 3.09,-0.59 4.23,-1.57l0.27,0.28v0.79l5,4.99L20.49,19l-4.99,-5zm-6,0C7.01,14 5,11.99 5,9.5S7.01,5 9.5,5 14,7.01 14,9.5 11.99,14 9.5,14z"/></svg>
+          <input id="search-input" type="text" autocomplete="off" placeholder="Busca cualquier cosa sobre Wladimir..." autofocus />
+          <button type="button" class="mic-btn" title="Búsqueda por voz" id="voice-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M12,15c1.66,0 3,-1.34 3,-3V6c0,-1.66 -1.34,-3 -3,-3 -1.66,0 -3,1.34 -3,3v6c0,1.66 1.34,3 3,3z"/>
+              <path fill="#34A853" d="M17,12c0,2.76 -2.24,5 -5,5s-5,-2.24 -5,-5H5c0,3.53 2.61,6.43 6,6.92V21h2v-2.08c3.39,-0.49 6,-3.39 6,-6.92h-2z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="search-suggestions" id="suggestions"></div>
+        <div class="search-actions">
+          <button type="submit" class="btn-google">Buscar a Wladimir</button>
+          <button type="button" class="btn-google" id="lucky-btn">Voy a tener suerte</button>
+        </div>
+        <div class="lang-line">
+          Disponible en: <a href="#">English</a> · <a href="#">Français</a>
+        </div>
+      </form>
+    </main>
+
+    <footer class="home-footer">
+      <div class="footer-top">
+        <span>México</span>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-left">
+          <a href="#">Acerca de</a>
+          <a href="https://www.linkedin.com/in/wladimir-cantú-gejde" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:wcantug@gmail.com">Email</a>
+        </div>
+        <div class="footer-right">
+          <a href="#">Configuración</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- ============== RESULTS PAGE ============== -->
+  <section id="results" class="page page--results">
+    <header class="results-header">
+      <div class="results-header-top">
+        <a href="#" class="results-logo" id="logo-home">
+          <span style="color:#4285F4">W</span><span style="color:#EA4335">l</span><span style="color:#FBBC05">a</span><span style="color:#4285F4">d</span><span style="color:#34A853">i</span><span style="color:#EA4335">m</span><span style="color:#FBBC05">i</span><span style="color:#4285F4">r</span>
+        </a>
+        <form class="results-search" id="search-form-2">
+          <div class="results-search-inner">
+            <input id="search-input-2" type="text" autocomplete="off" />
+            <button type="button" class="icon-btn" title="Borrar" id="clear-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#9aa0a6" d="M19,6.41L17.59,5 12,10.59 6.41,5 5,6.41 10.59,12 5,17.59 6.41,19 12,13.41 17.59,19 19,17.59 13.41,12z"/></svg>
+            </button>
+            <span class="search-divider"></span>
+            <button type="button" class="icon-btn" title="Voz">
+              <svg width="22" height="22" viewBox="0 0 24 24"><path fill="#4285F4" d="M12,15c1.66,0 3,-1.34 3,-3V6c0,-1.66 -1.34,-3 -3,-3 -1.66,0 -3,1.34 -3,3v6c0,1.66 1.34,3 3,3z"/><path fill="#34A853" d="M17,12c0,2.76 -2.24,5 -5,5s-5,-2.24 -5,-5H5c0,3.53 2.61,6.43 6,6.92V21h2v-2.08c3.39,-0.49 6,-3.39 6,-6.92h-2z"/></svg>
+            </button>
+            <button type="submit" class="icon-btn search-go" title="Buscar">
+              <svg width="22" height="22" viewBox="0 0 24 24"><path fill="#4285F4" d="M15.5,14h-0.79l-0.28,-0.27C15.41,12.59 16,11.11 16,9.5 16,5.91 13.09,3 9.5,3S3,5.91 3,9.5 5.91,16 9.5,16c1.61,0 3.09,-0.59 4.23,-1.57l0.27,0.28v0.79l5,4.99L20.49,19l-4.99,-5zm-6,0C7.01,14 5,11.99 5,9.5S7.01,5 9.5,5 14,7.01 14,9.5 11.99,14 9.5,14z"/></svg>
+            </button>
+          </div>
+        </form>
+        <div class="results-header-right">
+          <button class="apps-btn" aria-label="Apps">
+            <svg width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zm6,0c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zm6,0c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zm6,0c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zm6,0c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zm6,0c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zm6,0c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"/></svg>
+          </button>
+          <button class="profile-avatar" title="Wladimir Cantú">W</button>
+        </div>
+      </div>
+
+      <nav class="results-tabs" id="results-tabs">
+        <button class="tab active" data-filter="todo">
+          <svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.57 4.23l.27.28h.8l5 5L19 20.49l-5-5v-.79l-.28-.27A6.5 6.5 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+          Todo
+        </button>
+        <button class="tab" data-filter="sobre-mi">Sobre mí</button>
+        <button class="tab" data-filter="experiencia">Experiencia</button>
+        <button class="tab" data-filter="proyectos">Proyectos</button>
+        <button class="tab" data-filter="tecnologias">Tecnologías</button>
+        <button class="tab" data-filter="soft-skills">Soft skills</button>
+        <button class="tab" data-filter="educacion">Educación</button>
+        <button class="tab tab--more">
+          Más
+          <svg width="12" height="12" viewBox="0 0 24 24"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="tools-btn">Herramientas</div>
+      </nav>
+    </header>
+
+    <div class="results-body">
+      <div class="results-main" id="results-main">
+
+        <div class="results-stats" id="results-stats">Aproximadamente 1,420,000,000 resultados (0.42 segundos)</div>
+
+        <!-- People also ask -->
+        <article class="result-card paa-card">
+          <h3 class="paa-title">Otras preguntas de los usuarios</h3>
+          <div class="paa-list">
+            <button class="paa-item" data-jump="sobre-mi">
+              <span>¿Quién es Wladimir Cantú?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#9aa0a6" d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <button class="paa-item" data-jump="tecnologias">
+              <span>¿Qué tecnologías domina?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#9aa0a6" d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <button class="paa-item" data-jump="experiencia">
+              <span>¿Dónde ha trabajado Wladimir?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#9aa0a6" d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <button class="paa-item" data-jump="proyectos">
+              <span>¿Cuáles son sus proyectos destacados?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#9aa0a6" d="M7 10l5 5 5-5z"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- ============= SOBRE MÍ ============= -->
+        <article class="result-card" data-section="sobre-mi" id="card-sobre-mi">
+          <div class="result-source">
+            <div class="favicon">W</div>
+            <div class="result-source-text">
+              <div class="result-site">Wladimir Cantú</div>
+              <div class="result-url">https://wladimir.dev<span class="breadcrumb"> › sobre-mi</span></div>
+            </div>
+            <button class="result-menu" aria-label="More">⋮</button>
+          </div>
+          <h3 class="result-title">
+            <a href="#" class="expand-link" data-target="exp-sobre-mi">Sobre mí — Wladimir Cantú | Data Scientist</a>
+          </h3>
+          <p class="result-snippet">
+            <span class="date">Hace 5 años ·</span>
+            Data Scientist con más de <em>5 años de experiencia profesional</em> entregando soluciones analíticas end-to-end que impulsan decisiones de negocio reales — desde diseño de pipelines de datos y frameworks de KPIs...
+          </p>
+          <div class="expansion" id="exp-sobre-mi">
+            <div class="expansion-inner">
+              <h4>Perfil profesional</h4>
+              <p>Soy <strong>Wladimir Cantú Gejde</strong>, Data Scientist basado en Ciudad de México con más de 5 años de experiencia entregando soluciones analíticas end-to-end. Trabajo el ciclo completo: ingestión de telemetría cruda, modelado predictivo, diseño de pruebas A/B y reporting ejecutivo.</p>
+              <h4>¿Qué hago?</h4>
+              <ul>
+                <li>Diseño <strong>pipelines de datos</strong> y frameworks de KPIs que las áreas de negocio realmente usan.</li>
+                <li>Construyo <strong>modelos de forecasting conductual</strong> (DAU/WAU/MAU, retención por cohortes, churn).</li>
+                <li>Diseño y ejecuto <strong>experimentos A/B</strong> de principio a fin — desde la hipótesis hasta la recomendación.</li>
+                <li>Integro <strong>LLMs en producción</strong> (OpenAI, Anthropic) con validación de output y trazabilidad.</li>
+                <li>Traduzco modelos complejos en <strong>recomendaciones accionables</strong> para stakeholders no técnicos.</li>
+              </ul>
+              <h4>Stack principal</h4>
+              <p>Python (pandas, NumPy, scikit-learn, XGBoost), SQL avanzado, Tableau, Power BI, Docker, n8n e integración de LLMs en flujos productivos.</p>
+              <div class="chips">
+                <span class="chip">Ciudad de México, MX</span>
+                <span class="chip">Disponible para roles remotos</span>
+                <span class="chip">5+ años de experiencia</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============= EXPERIENCIA ============= -->
+        <article class="result-card" data-section="experiencia" id="card-experiencia">
+          <div class="result-source">
+            <div class="favicon" style="background:#0a66c2">in</div>
+            <div class="result-source-text">
+              <div class="result-site">LinkedIn · Wladimir Cantú</div>
+              <div class="result-url">https://linkedin.com<span class="breadcrumb"> › wladimir-cantú-gejde › experiencia</span></div>
+            </div>
+            <button class="result-menu">⋮</button>
+          </div>
+          <h3 class="result-title">
+            <a href="#" class="expand-link" data-target="exp-experiencia">Experiencia profesional — 5+ años en Data Science</a>
+          </h3>
+          <p class="result-snippet">
+            <span class="date">2020 – Presente ·</span>
+            Data Scientist en <em>GPS-I</em> (telemetría satelital), Developer en <em>Solana Foundation</em> y Freelance integrando LLMs en workflows productivos. Modelado predictivo, A/B testing, dashboards ejecutivos...
+          </p>
+          <div class="expansion" id="exp-experiencia">
+            <div class="expansion-inner">
+              <div class="job">
+                <div class="job-header">
+                  <div class="job-logo" style="background:#9945FF">◎</div>
+                  <div>
+                    <div class="job-title">Developer · Solana Foundation</div>
+                    <div class="job-meta">2025 · Remoto</div>
+                  </div>
+                </div>
+                <ul>
+                  <li>Contribuí a proyectos del ecosistema Solana trabajando con lógica de programas on-chain e infraestructura blockchain.</li>
+                  <li>Integré APIs Web3 de Solana en aplicaciones: flujos de transacciones, interacción con wallets y consulta de datos on-chain.</li>
+                  <li>Colaboré con un equipo internacional distribuido en un entorno open-source de ritmo acelerado.</li>
+                </ul>
+              </div>
+              <div class="job">
+                <div class="job-header">
+                  <div class="job-logo" style="background:#1a73e8">📡</div>
+                  <div>
+                    <div class="job-title">Data Scientist · GPS-I</div>
+                    <div class="job-meta">Enero 2020 – 2025 · Ciudad de México · Telemetría satelital</div>
+                  </div>
+                </div>
+                <ul>
+                  <li>Diseñé y mantuve modelos ML productivos para detectar patrones de falla, anomalías conductuales e ineficiencias operativas sobre telemetría en tiempo real de alto volumen.</li>
+                  <li>Construí modelos de <strong>forecasting conductual</strong> para predecir engagement, frecuencia de actividad y retención.</li>
+                  <li>Diseñé y ejecuté <strong>pruebas A/B</strong> end-to-end: hipótesis, sample sizing, monitoreo y análisis estadístico (t-test, Mann-Whitney).</li>
+                  <li>Definí frameworks de KPIs para actividad de usuario, retención y desempeño operativo.</li>
+                  <li>Desarrollé dashboards interactivos en <strong>Tableau y Power BI</strong> para management, operaciones y ventas.</li>
+                  <li>Implementé pipelines automatizados de validación, consolidación y generación de reportes.</li>
+                </ul>
+              </div>
+              <div class="job">
+                <div class="job-header">
+                  <div class="job-logo" style="background:#34a853">⚡</div>
+                  <div>
+                    <div class="job-title">Data Scientist & Developer · Freelance</div>
+                    <div class="job-meta">Enero 2023 – Presente · Ciudad de México</div>
+                  </div>
+                </div>
+                <ul>
+                  <li>Desarrollé pipelines ML end-to-end con Python (scikit-learn, pandas, NumPy) sobre datasets reales de clientes.</li>
+                  <li>Integré <strong>APIs de LLM (OpenAI, Anthropic)</strong> en automatizaciones productivas: clasificación, reportes asistidos y chatbots con validación de output.</li>
+                  <li>Optimicé queries SQL conectando APIs externas a PostgreSQL y MongoDB para visualización en tiempo real.</li>
+                  <li>Diseñé workflows de <strong>n8n con nodos de IA</strong> para procesos repetibles: consolidación de datos, consultas programadas y decisiones asistidas por LLM.</li>
+                  <li>Impartí entrenamientos de <strong>data literacy e IA</strong> a usuarios de negocio no técnicos.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============= TECNOLOGÍAS ============= -->
+        <article class="result-card" data-section="tecnologias" id="card-tecnologias">
+          <div class="result-source">
+            <div class="favicon" style="background:#306998">🐍</div>
+            <div class="result-source-text">
+              <div class="result-site">GitHub · wladimir</div>
+              <div class="result-url">https://github.com<span class="breadcrumb"> › wladimir › stack</span></div>
+            </div>
+            <button class="result-menu">⋮</button>
+          </div>
+          <h3 class="result-title">
+            <a href="#" class="expand-link" data-target="exp-tecnologias">Stack tecnológico — Python, SQL, ML, Cloud & LLMs</a>
+          </h3>
+          <p class="result-snippet">
+            Python (pandas, NumPy, scikit-learn, XGBoost, LightGBM), SQL avanzado (CTEs, window functions),
+            <em>Tableau, Power BI</em>, Docker, Kubernetes, n8n, OpenAI / Anthropic APIs, Solana / Web3...
+          </p>
+          <div class="expansion" id="exp-tecnologias">
+            <div class="expansion-inner">
+              <div class="tech-grid">
+                <div class="tech-block">
+                  <h4>Lenguajes de programación</h4>
+                  <div class="badges">
+                    <span class="badge badge-lang">Python</span>
+                    <span class="badge badge-lang">JavaScript</span>
+                    <span class="badge badge-lang">TypeScript</span>
+                    <span class="badge badge-lang">Java</span>
+                    <span class="badge badge-lang">C++</span>
+                    <span class="badge badge-lang">PHP</span>
+                    <span class="badge badge-lang">Swift</span>
+                    <span class="badge badge-lang">Solidity</span>
+                    <span class="badge badge-lang">PowerShell</span>
+                    <span class="badge badge-lang">Bash</span>
+                    <span class="badge badge-lang">SQL</span>
+                    <span class="badge badge-lang">HTML5</span>
+                    <span class="badge badge-lang">CSS3</span>
+                    <span class="badge badge-lang">LaTeX</span>
+                  </div>
+                </div>
+                <div class="tech-block">
+                  <h4>Data Science & ML</h4>
+                  <div class="badges">
+                    <span class="badge badge-py">Pandas</span>
+                    <span class="badge badge-py">NumPy</span>
+                    <span class="badge badge-py">Scikit-learn</span>
+                    <span class="badge badge-py">XGBoost</span>
+                    <span class="badge badge-py">LightGBM</span>
+                    <span class="badge badge-py">SciPy</span>
+                    <span class="badge badge-py">Statsmodels</span>
+                    <span class="badge badge-py">TensorFlow</span>
+                    <span class="badge badge-py">Keras</span>
+                    <span class="badge badge-py">Matplotlib</span>
+                    <span class="badge badge-py">Seaborn</span>
+                    <span class="badge badge-py">Plotly</span>
+                    <span class="badge badge-py">Chart.js</span>
+                    <span class="badge badge-py">Apache Spark</span>
+                    <span class="badge badge-py">Apache Hadoop</span>
+                    <span class="badge badge-py">Anaconda</span>
+                    <span class="badge badge-py">Jupyter</span>
+                  </div>
+                </div>
+                <div class="tech-block">
+                  <h4>Frontend & UI</h4>
+                  <div class="badges">
+                    <span class="badge badge-web">React</span>
+                    <span class="badge badge-web">Next.js</span>
+                    <span class="badge badge-web">Vue.js</span>
+                    <span class="badge badge-web">Angular.js</span>
+                    <span class="badge badge-web">Three.js</span>
+                    <span class="badge badge-web">TailwindCSS</span>
+                    <span class="badge badge-web">Bootstrap</span>
+                    <span class="badge badge-web">jQuery</span>
+                    <span class="badge badge-web">Context API</span>
+                  </div>
+                </div>
+                <div class="tech-block">
+                  <h4>Backend & APIs</h4>
+                  <div class="badges">
+                    <span class="badge badge-back">Node.js</span>
+                    <span class="badge badge-back">Express.js</span>
+                    <span class="badge badge-back">FastAPI</span>
+                    <span class="badge badge-back">Flask</span>
+                    <span class="badge badge-back">Django</span>
+                    <span class="badge badge-back">Celery</span>
+                    <span class="badge badge-back">NPM</span>
+                    <span class="badge badge-back">Requests</span>
+                  </div>
+                </div>
+                <div class="tech-block">
+                  <h4>Bases de datos</h4>
+                  <div class="badges">
+                    <span class="badge badge-db">MySQL</span>
+                    <span class="badge badge-db">PostgreSQL</span>
+                    <span class="badge badge-db">SQLite</span>
+                    <span class="badge badge-db">MongoDB</span>
+                    <span class="badge badge-db">Redis</span>
+                    <span class="badge badge-db">Firebase</span>
+                    <span class="badge badge-db">Neon</span>
+                    <span class="badge badge-db">Prisma</span>
+                    <span class="badge badge-db">CTEs · Window functions</span>
+                  </div>
+                </div>
+                <div class="tech-block">
+                  <h4>Infraestructura & DevOps</h4>
+                  <div class="badges">
+                    <span class="badge badge-infra">Docker</span>
+                    <span class="badge badge-infra">Docker Compose</span>
+                    <span class="badge badge-infra">Kubernetes</span>
+                    <span class="badge badge-infra">Cloudflare</span>
+                    <span class="badge badge-infra">Apache</span>
+                    <span class="badge badge-infra">Nginx</span>
+                    <span class="badge badge-infra">Cisco</span>
+                    <span class="badge badge-infra">Linux / VPS</span>
+                    <span class="badge badge-infra">Raspberry Pi</span>
+                    <span class="badge badge-infra">Git</span>
+                    <span class="badge badge-infra">GitHub</span>
+                    <span class="badge badge-infra">Windows Terminal</span>
+                    <span class="badge badge-infra">VS Code</span>
+                  </div>
+                </div>
+                <div class="tech-block">
+                  <h4>IA / LLMs / Automatización</h4>
+                  <div class="badges">
+                    <span class="badge badge-ai">OpenAI API</span>
+                    <span class="badge badge-ai">Anthropic API</span>
+                    <span class="badge badge-ai">Prompt engineering</span>
+                    <span class="badge badge-ai">Chain-of-thought</span>
+                    <span class="badge badge-ai">Output validation</span>
+                    <span class="badge badge-ai">n8n</span>
+                  </div>
+                </div>
+                <div class="tech-block">
+                  <h4>Blockchain / Web3</h4>
+                  <div class="badges">
+                    <span class="badge badge-w3">Solana</span>
+                    <span class="badge badge-w3">Rust (programs)</span>
+                    <span class="badge badge-w3">Web3.js</span>
+                    <span class="badge badge-w3">OpenSea</span>
+                    <span class="badge badge-w3">Solidity</span>
+                  </div>
+                </div>
+                <div class="tech-block">
+                  <h4>BI, Visualización & Diseño</h4>
+                  <div class="badges">
+                    <span class="badge badge-bi">Tableau</span>
+                    <span class="badge badge-bi">Power BI · DAX</span>
+                    <span class="badge badge-bi">Excel avanzado</span>
+                    <span class="badge badge-bi">Pivot tables · Fórmulas</span>
+                    <span class="badge badge-bi">Canva</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============= SOFT SKILLS ============= -->
+        <article class="result-card" data-section="soft-skills" id="card-soft-skills">
+          <div class="result-source">
+            <div class="favicon" style="background:#ea4335">★</div>
+            <div class="result-source-text">
+              <div class="result-site">Wladimir Cantú · Soft Skills</div>
+              <div class="result-url">https://wladimir.dev<span class="breadcrumb"> › soft-skills</span></div>
+            </div>
+            <button class="result-menu">⋮</button>
+          </div>
+          <h3 class="result-title">
+            <a href="#" class="expand-link" data-target="exp-soft-skills">Soft skills — Comunicación, ownership y mentoría</a>
+          </h3>
+          <p class="result-snippet">
+            Traducción de modelos complejos en recomendaciones de negocio, ownership end-to-end de proyectos,
+            mindset emprendedor y experiencia como <em>entrenador de IA y data literacy</em> para equipos no técnicos...
+          </p>
+          <div class="expansion" id="exp-soft-skills">
+            <div class="expansion-inner">
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <div class="skill-icon">🗣️</div>
+                  <h4>Comunicación técnica</h4>
+                  <p>Traduzco outputs de modelos complejos en recomendaciones claras y accionables para stakeholders no técnicos.</p>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">🎯</div>
+                  <h4>Ownership end-to-end</h4>
+                  <p>Tomo proyectos completos: scoping, modelado, validación, documentación y entrega — sin necesidad de supervisión constante.</p>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">🚀</div>
+                  <h4>Mindset emprendedor</h4>
+                  <p>Identifico proactivamente oportunidades de mejora data-driven sin esperar a que vengan desde arriba.</p>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">🎓</div>
+                  <h4>Mentoría & training</h4>
+                  <p>Experiencia formando a equipos de negocio en data literacy, prompt engineering y uso práctico de IA en la empresa.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============= PROYECTOS ============= -->
+        <article class="result-card" data-section="proyectos" id="card-proyectos">
+          <div class="result-source">
+            <div class="favicon" style="background:#fbbc05;color:#000">📊</div>
+            <div class="result-source-text">
+              <div class="result-site">Portafolio · Proyectos destacados</div>
+              <div class="result-url">https://wladimir.dev<span class="breadcrumb"> › proyectos</span></div>
+            </div>
+            <button class="result-menu">⋮</button>
+          </div>
+          <h3 class="result-title">
+            <a href="#" class="expand-link" data-target="exp-proyectos">Proyectos destacados — ML, analítica conductual y automatización con IA</a>
+          </h3>
+          <p class="result-snippet">
+            Forecasting de retención DAU/WAU/MAU, analítica deportiva NBA con feature engineering avanzado,
+            análisis de emisiones <em>CO₂</em> y workflows productivos con LLMs en n8n. Ver todos los proyectos...
+          </p>
+          <div class="expansion" id="exp-proyectos">
+            <div class="expansion-inner">
+              <div class="projects-grid">
+
+                <div class="project-card">
+                  <div class="project-thumb" style="background:linear-gradient(135deg,#4285F4,#34a853)">
+                    <span>📈</span>
+                  </div>
+                  <h4>User Retention & Engagement Forecasting</h4>
+                  <p>Diseño end-to-end de tracking DAU/WAU/MAU, modelado de retención por cohortes y predicción de frecuencia de actividad para decisiones de producto y comerciales.</p>
+                  <div class="project-tags">
+                    <span>Forecasting conductual</span>
+                    <span>KPI framework</span>
+                    <span>Tableau</span>
+                    <span>Power BI</span>
+                  </div>
+                </div>
+
+                <div class="project-card">
+                  <div class="project-thumb" style="background:linear-gradient(135deg,#EA4335,#FBBC05)">
+                    <span>🏀</span>
+                  </div>
+                  <h4>NBA Sports Analytics — Predicción</h4>
+                  <p>Feature engineering sobre box scores: normalización per-36, medias móviles de momentum 5/10 juegos, ratios compuestos ofensivo/defensivo como inputs de alto-señal para modelos predictivos.</p>
+                  <div class="project-tags">
+                    <span>Python</span>
+                    <span>pandas</span>
+                    <span>scikit-learn</span>
+                    <span>SQL</span>
+                  </div>
+                </div>
+
+                <div class="project-card">
+                  <div class="project-thumb" style="background:linear-gradient(135deg,#34a853,#1a73e8)">
+                    <span>🌱</span>
+                  </div>
+                  <h4>CO₂ Emissions & Fuel Cost Analysis</h4>
+                  <p>Pipeline EDA completo: limpieza, transformación de features, análisis de correlación y visualización ejecutiva para decisiones de eficiencia energética.</p>
+                  <div class="project-tags">
+                    <span>EDA</span>
+                    <span>Matplotlib</span>
+                    <span>Seaborn</span>
+                    <span>Tableau</span>
+                    <span>Excel</span>
+                  </div>
+                </div>
+
+                <div class="project-card">
+                  <div class="project-thumb" style="background:linear-gradient(135deg,#9945FF,#14F195)">
+                    <span>🤖</span>
+                  </div>
+                  <h4>LLM-Powered Business Workflows</h4>
+                  <p>Pipelines productivos en n8n integrando modelos de lenguaje para clasificación, generación de respuestas y procesamiento de datos con manejo de errores, validación de output y auditoría completa.</p>
+                  <div class="project-tags">
+                    <span>n8n</span>
+                    <span>OpenAI</span>
+                    <span>Anthropic</span>
+                    <span>Docker</span>
+                    <span>SQL</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============= EDUCACIÓN ============= -->
+        <article class="result-card" data-section="educacion" id="card-educacion">
+          <div class="result-source">
+            <div class="favicon" style="background:#1a73e8">🎓</div>
+            <div class="result-source-text">
+              <div class="result-site">Universidad Panamericana</div>
+              <div class="result-url">https://up.edu.mx<span class="breadcrumb"> › ingeniería › ciberseguridad</span></div>
+            </div>
+            <button class="result-menu">⋮</button>
+          </div>
+          <h3 class="result-title">
+            <a href="#" class="expand-link" data-target="exp-educacion">Educación — Ingeniería en Ciberseguridad e Inteligencia de Datos</a>
+          </h3>
+          <p class="result-snippet">
+            <em>Universidad Panamericana</em> · Ciudad de México. Áreas core: data science, machine learning,
+            métodos estadísticos, estructuras de datos, bases de datos, ciberseguridad y fundamentos matemáticos.
+          </p>
+          <div class="expansion" id="exp-educacion">
+            <div class="expansion-inner">
+              <h4>Universidad Panamericana — Ciudad de México</h4>
+              <p><strong>B.Eng. en Ciberseguridad e Inteligencia de Datos</strong></p>
+              <ul>
+                <li>Data Science y Machine Learning aplicado.</li>
+                <li>Métodos estadísticos y matemática para ML.</li>
+                <li>Estructuras de datos y algoritmos.</li>
+                <li>Bases de datos relacionales y no relacionales.</li>
+                <li>Ciberseguridad ofensiva y defensiva.</li>
+                <li>Fundamentos matemáticos avanzados.</li>
+              </ul>
+              <h4>Idiomas</h4>
+              <div class="lang-row">
+                <div class="lang-item">
+                  <span>🇲🇽 Español</span>
+                  <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+                  <span>Nativo</span>
+                </div>
+                <div class="lang-item">
+                  <span>🇬🇧 Inglés</span>
+                  <div class="lang-bar"><div class="lang-fill" style="width:92%"></div></div>
+                  <span>Avanzado · TOEFL iBT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Related searches -->
+        <article class="related-card">
+          <h3>Búsquedas relacionadas con <strong>Wladimir Cantú</strong></h3>
+          <div class="related-grid">
+            <button class="related-item" data-jump="proyectos">
+              <span>wladimir cantú proyectos de machine learning</span>
+              <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#9aa0a6" d="M15.5,14h-0.79l-0.28,-0.27C15.41,12.59 16,11.11 16,9.5 16,5.91 13.09,3 9.5,3S3,5.91 3,9.5 5.91,16 9.5,16c1.61,0 3.09,-0.59 4.23,-1.57l0.27,0.28v0.79l5,4.99L20.49,19l-4.99,-5z"/></svg>
+            </button>
+            <button class="related-item" data-jump="experiencia">
+              <span>wladimir cantú gps-i data scientist</span>
+              <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#9aa0a6" d="M15.5,14h-0.79l-0.28,-0.27C15.41,12.59 16,11.11 16,9.5 16,5.91 13.09,3 9.5,3S3,5.91 3,9.5 5.91,16 9.5,16c1.61,0 3.09,-0.59 4.23,-1.57l0.27,0.28v0.79l5,4.99L20.49,19l-4.99,-5z"/></svg>
+            </button>
+            <button class="related-item" data-jump="tecnologias">
+              <span>wladimir python pandas xgboost</span>
+              <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#9aa0a6" d="M15.5,14h-0.79l-0.28,-0.27C15.41,12.59 16,11.11 16,9.5 16,5.91 13.09,3 9.5,3S3,5.91 3,9.5 5.91,16 9.5,16c1.61,0 3.09,-0.59 4.23,-1.57l0.27,0.28v0.79l5,4.99L20.49,19l-4.99,-5z"/></svg>
+            </button>
+            <button class="related-item" data-jump="sobre-mi">
+              <span>wladimir cantú linkedin</span>
+              <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#9aa0a6" d="M15.5,14h-0.79l-0.28,-0.27C15.41,12.59 16,11.11 16,9.5 16,5.91 13.09,3 9.5,3S3,5.91 3,9.5 5.91,16 9.5,16c1.61,0 3.09,-0.59 4.23,-1.57l0.27,0.28v0.79l5,4.99L20.49,19l-4.99,-5z"/></svg>
+            </button>
+            <button class="related-item" data-jump="proyectos">
+              <span>data science portfolio mexico city</span>
+              <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#9aa0a6" d="M15.5,14h-0.79l-0.28,-0.27C15.41,12.59 16,11.11 16,9.5 16,5.91 13.09,3 9.5,3S3,5.91 3,9.5 5.91,16 9.5,16c1.61,0 3.09,-0.59 4.23,-1.57l0.27,0.28v0.79l5,4.99L20.49,19l-4.99,-5z"/></svg>
+            </button>
+            <button class="related-item" data-jump="soft-skills">
+              <span>wladimir cantú soft skills</span>
+              <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#9aa0a6" d="M15.5,14h-0.79l-0.28,-0.27C15.41,12.59 16,11.11 16,9.5 16,5.91 13.09,3 9.5,3S3,5.91 3,9.5 5.91,16 9.5,16c1.61,0 3.09,-0.59 4.23,-1.57l0.27,0.28v0.79l5,4.99L20.49,19l-4.99,-5z"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <div class="goooogle">
+            <span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">o</span><span style="color:#34A853">o</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span>
+          </div>
+          <div class="pages">
+            <span class="page-num active">1</span>
+            <span class="page-num">2</span>
+            <span class="page-num">3</span>
+            <span class="page-num">4</span>
+            <span class="page-num">5</span>
+            <span class="next">Siguiente ›</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============= KNOWLEDGE PANEL ============= -->
+      <aside class="knowledge-panel">
+        <div class="kp-hero">
+          <div class="kp-avatar">
+            <img src="profile.jpg" alt="Wladimir Cantú" onerror="this.style.display='none';this.parentNode.classList.add('kp-avatar--fallback');this.parentNode.textContent='W';">
+          </div>
+          <div class="kp-name">Wladimir Cantú Gejde</div>
+          <div class="kp-tagline">Data Scientist · LLM Engineer · 5+ años</div>
+        </div>
+        <div class="kp-section">
+          <div class="kp-row"><span>📍 Ubicación</span><strong>Ciudad de México, MX</strong></div>
+          <div class="kp-row"><span>📧 Email</span><strong><a href="mailto:wcantug@gmail.com">wcantug@gmail.com</a></strong></div>
+          <div class="kp-row"><span>📱 Teléfono</span><strong>+52 55 2025 0904</strong></div>
+          <div class="kp-row"><span>💼 LinkedIn</span><strong><a href="https://linkedin.com/in/wladimir-cantú-gejde" target="_blank">wladimir-cantú-gejde</a></strong></div>
+          <div class="kp-row"><span>🐙 GitHub</span><strong><a href="https://github.com/Panawlad" target="_blank">@Panawlad</a></strong></div>
+          <div class="kp-row"><span>🎓 Educación</span><strong>Universidad Panamericana</strong></div>
+          <div class="kp-row"><span>🗣️ Idiomas</span><strong>Español, Inglés (avanzado)</strong></div>
+        </div>
+
+        <div class="kp-section">
+          <h4 class="kp-h">Especialidades</h4>
+          <div class="kp-badges">
+            <span>Machine Learning</span>
+            <span>A/B Testing</span>
+            <span>Forecasting</span>
+            <span>LLMs en producción</span>
+            <span>Dashboards ejecutivos</span>
+            <span>Pipelines de datos</span>
+          </div>
+        </div>
+
+        <div class="kp-section kp-cta">
+          <a href="mailto:wcantug@gmail.com" class="kp-btn">Contactar</a>
+        </div>
+
+        <div class="kp-feedback">Comentarios sobre este perfil</div>
+      </aside>
+    </div>
+
+    <footer class="results-footer">
+      <div class="results-footer-top">México · Ciudad de México · Desde tu dirección IP</div>
+      <div class="results-footer-bottom">
+        <div>
+          <a href="#">Ayuda</a>
+          <a href="#">Enviar comentarios</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
