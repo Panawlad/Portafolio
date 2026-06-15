@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell(python -c \"from pypdf import PdfReader; r = PdfReader\\(r'C:\\\\Users\\\\wcant\\\\Downloads\\\\Resume.pdf'\\); [print\\(p.extract_text\\(\\)\\) for p in r.pages]\")"
-    ]
-  }
-}
